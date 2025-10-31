@@ -19,7 +19,7 @@ test('Complete order flow on saucedemo', async ({ page }) =>
   await products.addProductToCart();
   await products.goToCart();
   await cart.checkout();
-  await checkout.fillDetails('Roha', 'Shir', '998877');
+  await checkout.fillDetails('sanket', 'Tilkari', '916833');
 
   const success = await confirmation.verifyOrderSuccess();
   expect(success).toBeTruthy();
